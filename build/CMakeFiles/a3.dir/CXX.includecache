@@ -46,43 +46,33 @@ Vector3f.h
 Vector4f.h
 ../vecmath/include/Vector4f.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/camera.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.cpp
+boid.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.h
+camera.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
+vertexrecorder.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h
+
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.h
+vector
+-
+particlesystem.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
+
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
 vecmath.h
 -
 cstdint
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/clothsystem.cpp
-clothsystem.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/clothsystem.h
-camera.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/camera.h
-vertexrecorder.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/vertexrecorder.h
-cmath
--
-cstdlib
--
-ctime
--
-iostream
--
-vector
--
-
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/clothsystem.h
-vector
--
-particlesystem.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/particlesystem.h
-
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/gl.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
 OpenGL/gl3.h
 -
 GL/glew.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/particlesystem.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
 vector
 -
 vecmath.h
@@ -90,11 +80,11 @@ vecmath.h
 cstdint
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/vertexrecorder.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h
 vector
 -
 vecmath.h
 -
 gl.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/src/gl.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
 

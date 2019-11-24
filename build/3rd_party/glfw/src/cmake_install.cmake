@@ -1,4 +1,4 @@
-# Install script for directory: /Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src
+# Install script for directory: /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

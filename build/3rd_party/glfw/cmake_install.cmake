@@ -1,4 +1,4 @@
-# Install script for directory: /Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw
+# Install script for directory: /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/build/3rd_party/glfw/src/cmake_install.cmake")
+  include("/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/build/3rd_party/glfw/src/cmake_install.cmake")
 
 endif()
 

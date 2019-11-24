@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/include/GLFW/glfw3.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/include/GLFW/glfw3.h
 stddef.h
 -
 stdint.h
@@ -46,13 +46,13 @@ GL/glext.h
 GL/glu.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_init.m
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_init.m
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 sys/param.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_joystick.h
 IOKit/IOKitLib.h
 -
 IOKit/IOCFPlugIn.h
@@ -62,9 +62,9 @@ IOKit/hid/IOHIDLib.h
 IOKit/hid/IOHIDKeys.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_joystick.m
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_joystick.m
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 unistd.h
 -
 ctype.h
@@ -80,9 +80,9 @@ CoreFoundation/CoreFoundation.h
 Kernel/IOKit/hidsystem/IOHIDUsageTables.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_monitor.m
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_monitor.m
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 stdlib.h
 -
 limits.h
@@ -96,7 +96,7 @@ CoreVideo/CVDisplayLink.h
 ApplicationServices/ApplicationServices.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_platform.h
 stdint.h
 -
 dlfcn.h
@@ -110,21 +110,21 @@ Carbon/Carbon.h
 ApplicationServices/ApplicationServices.h
 -
 posix_tls.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_tls.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_tls.h
 cocoa_joystick.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_joystick.h
 nsgl_context.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/nsgl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/nsgl_context.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_time.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_time.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 mach/mach_time.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_window.m
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_window.m
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 float.h
 -
 string.h
@@ -132,9 +132,9 @@ string.h
 crt_externs.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/context.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/context.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 assert.h
 -
 stdio.h
@@ -146,15 +146,15 @@ limits.h
 stdio.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/egl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/egl_context.h
 EGL/eglplatform.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/glx_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/glx_context.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/init.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/init.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 string.h
 -
 stdlib.h
@@ -164,9 +164,9 @@ stdio.h
 stdarg.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/input.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/input.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 assert.h
 -
 float.h
@@ -174,27 +174,27 @@ float.h
 stdlib.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 glfw_config.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/glfw_config.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/glfw_config.h
 ../include/GLFW/glfw3.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/include/GLFW/glfw3.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/include/GLFW/glfw3.h
 cocoa_platform.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/cocoa_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/cocoa_platform.h
 win32_platform.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/win32_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/win32_platform.h
 x11_platform.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/x11_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/x11_platform.h
 wl_platform.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/wl_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/wl_platform.h
 mir_platform.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/mir_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/mir_platform.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/linux_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/linux_joystick.h
 regex.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/mir_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/mir_platform.h
 sys/queue.h
 -
 pthread.h
@@ -204,19 +204,19 @@ dlfcn.h
 mir_toolkit/mir_client_library.h
 -
 posix_tls.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_tls.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_tls.h
 posix_time.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_time.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_time.h
 linux_joystick.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/linux_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/linux_joystick.h
 xkb_unicode.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/xkb_unicode.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/xkb_unicode.h
 egl_context.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/egl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/egl_context.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/monitor.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/monitor.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 assert.h
 -
 math.h
@@ -230,27 +230,27 @@ stdlib.h
 limits.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/nsgl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/nsgl_context.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/nsgl_context.m
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/nsgl_context.m
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_time.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_time.h
 stdint.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_tls.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_tls.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_tls.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_tls.h
 pthread.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/vulkan.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/vulkan.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 assert.h
 -
 string.h
@@ -258,11 +258,11 @@ string.h
 stdlib.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/wgl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/wgl_context.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/win32_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/win32_joystick.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/win32_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/win32_platform.h
 wctype.h
 -
 windows.h
@@ -278,15 +278,15 @@ dbt.h
 malloc.h
 -
 win32_joystick.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/win32_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/win32_joystick.h
 wgl_context.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/wgl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/wgl_context.h
 egl_context.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/egl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/egl_context.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/window.c
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/window.c
 internal.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/internal.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/internal.h
 assert.h
 -
 string.h
@@ -296,7 +296,7 @@ stdlib.h
 float.h
 -
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/wl_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/wl_platform.h
 wayland-client.h
 -
 xkbcommon/xkbcommon.h
@@ -304,21 +304,21 @@ xkbcommon/xkbcommon.h
 dlfcn.h
 -
 posix_tls.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_tls.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_tls.h
 posix_time.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_time.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_time.h
 linux_joystick.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/linux_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/linux_joystick.h
 xkb_unicode.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/xkb_unicode.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/xkb_unicode.h
 egl_context.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/egl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/egl_context.h
 wayland-relative-pointer-unstable-v1-client-protocol.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/wayland-relative-pointer-unstable-v1-client-protocol.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/wayland-relative-pointer-unstable-v1-client-protocol.h
 wayland-pointer-constraints-unstable-v1-client-protocol.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/wayland-pointer-constraints-unstable-v1-client-protocol.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/wayland-pointer-constraints-unstable-v1-client-protocol.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/x11_platform.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/x11_platform.h
 unistd.h
 -
 signal.h
@@ -344,19 +344,19 @@ X11/extensions/Xinerama.h
 X11/extensions/xf86vmode.h
 -
 posix_tls.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_tls.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_tls.h
 posix_time.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/posix_time.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/posix_time.h
 linux_joystick.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/linux_joystick.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/linux_joystick.h
 xkb_unicode.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/xkb_unicode.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/xkb_unicode.h
 glx_context.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/glx_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/glx_context.h
 egl_context.h
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/egl_context.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/egl_context.h
 
-/Users/charvigopal/Dropbox (MIT)/Junior Fall/6.837/assn3/starter3/3rd_party/glfw/src/xkb_unicode.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/3rd_party/glfw/src/xkb_unicode.h
 
 3rd_party/glfw/src/glfw_config.h
 
