@@ -249,3 +249,19 @@ void drawQuad(float w)
     rec.record(P4, N);
     rec.draw();
 }
+
+void drawTriangle(float w)
+{
+    VertexRecorder rec;
+    float wh = w / 2;
+    const Vector3f N(0, 0, 1);
+    const Vector3f P1(-wh, -wh, 0);
+    const Vector3f P2(+wh, -wh, 0);
+    const Vector3f P3(+wh, +wh, 0);
+
+    // first face
+    rec.record(P1, N);
+    rec.record(P2, N);
+    rec.record(P3, N);
+    rec.draw();
+}

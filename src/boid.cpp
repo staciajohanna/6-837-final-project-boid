@@ -34,6 +34,6 @@ void Boid::draw(GLProgram& gl)
     for (int i = 0; i < currentState.size(); ++i) {
         Vector3f position = currentState[i];
         gl.updateModelMatrix(Matrix4f::translation(position));
-        drawQuad(1.0f);
+        drawTriangle(1.0f);
     } 
 }
