@@ -55,12 +55,9 @@ CMakeFiles/a3.dir/src/main.cpp.o
  ../vecmath/include/vecmath.h
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.h
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
- /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/clothsystem.h
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/main.cpp
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
- /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/pendulumsystem.h
- /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/simplesystem.h
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/starter3_util.h
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/timestepper.h
  /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h

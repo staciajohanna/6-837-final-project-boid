@@ -54,12 +54,9 @@ CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Vector4f.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/vecmath.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/boid.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/camera.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/clothsystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/gl.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/particlesystem.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/pendulumsystem.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/simplesystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/starter3_util.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/timestepper.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/vertexrecorder.h

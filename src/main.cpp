@@ -11,9 +11,6 @@
 #include "starter3_util.h"
 #include "camera.h"
 #include "timestepper.h"
-#include "simplesystem.h"
-#include "pendulumsystem.h"
-#include "clothsystem.h"
 #include "boid.h"
 
 using namespace std;
@@ -54,9 +51,6 @@ bool gMousePressed = false;
 GLuint program_color;
 GLuint program_light;
 
-SimpleSystem* simpleSystem;
-PendulumSystem* pendulumSystem;
-ClothSystem* clothSystem;
 Boid* boid;
 
 // Function implementations
@@ -186,19 +180,11 @@ void initSystem()
     default: printf("Unrecognized integrator\n"); exit(-1);
     }
 
-    simpleSystem = new SimpleSystem();
-    // TODO you can modify the number of particles
-    pendulumSystem = new PendulumSystem();
-    // TODO customize initialization of cloth system
-    clothSystem = new ClothSystem();
     boid = new Boid();
 }
 
 void freeSystem() {
-    delete simpleSystem; simpleSystem = nullptr;
     delete timeStepper; timeStepper = nullptr;
-    delete pendulumSystem; pendulumSystem = nullptr;
-    delete clothSystem; clothSystem = nullptr;
     delete boid; boid = nullptr;
 }
 
@@ -214,9 +200,6 @@ void stepSystem()
 {
     // step until simulated_s has caught up with elapsed_s.
     while (simulated_s < elapsed_s) {
-        timeStepper->takeStep(simpleSystem, h);
-        timeStepper->takeStep(pendulumSystem, h);
-        timeStepper->takeStep(clothSystem, h);
         timeStepper->takeStep(boid, h);
         simulated_s += h;
     }
@@ -230,9 +213,6 @@ void drawSystem()
     GLProgram gl(program_light, program_color, &camera);
     gl.updateLight(LIGHT_POS, LIGHT_COLOR.xyz()); // once per frame
 
-    simpleSystem->draw(gl);
-    pendulumSystem->draw(gl);
-    clothSystem->draw(gl);
     boid->draw(gl);
 
     // set uniforms for floor
