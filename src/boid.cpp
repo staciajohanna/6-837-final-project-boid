@@ -7,7 +7,9 @@ Boid::Boid()
 {
     // initialize the boid system
     std::vector<Vector3f> initialState;
-    initialState.push_back(Vector3f(0.1,2,0.03));
+    for (int i=0;i<7;i++) {
+        initialState.push_back(Vector3f(0.1,rand_uniform(0.0, 1.0),rand_uniform(0.0, 1.0)));
+    }
     setState(initialState);
 }
 
@@ -34,6 +36,6 @@ void Boid::draw(GLProgram& gl)
     for (int i = 0; i < currentState.size(); ++i) {
         Vector3f position = currentState[i];
         gl.updateModelMatrix(Matrix4f::translation(position));
-        drawTriangle(1.0f);
+        drawTriangle(0.3f);
     } 
 }
