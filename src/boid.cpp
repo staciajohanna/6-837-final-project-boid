@@ -2,6 +2,7 @@
 
 #include "camera.h"
 #include "vertexrecorder.h"
+#include <iostream>
 
 const float NEIGHBOR_RADIUS = 1.0;
 
@@ -28,6 +29,7 @@ Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex)
     Vector3f &curPos = state[birdIndex * 2];
     Vector3f &curVel = state[birdIndex * 2 + 1];
     Vector3f res = Vector3f(0.0);
+    int numOfNeighbor = 0;
     for (int i=0;i<state.size()/2;i++) {
         if (i == birdIndex) continue;
         Vector3f &pos = state[i * 2];
@@ -36,13 +38,28 @@ Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex)
         float dist = sqrt((curPos - pos).absSquared());
         Vector3f dir = curPos - pos;
         res += dir.normalized()/(dist*dist);
+        numOfNeighbor++;
     }
+    if (numOfNeighbor > 0) res /= (float)numOfNeighbor;
     return res;
 }
 
 Vector3f getAlignmentForce(std::vector<Vector3f> &state, int birdIndex) 
 {
-
+    Vector3f &curPos = state[birdIndex * 2];
+    Vector3f &curVel = state[birdIndex * 2 + 1];
+    Vector3f vAvg = Vector3f(0.0);
+    int numOfNeighbor = 0;
+    for (int i=0;i<state.size()/2;i++) {
+        if (i == birdIndex) continue;
+        Vector3f &pos = state[i * 2];
+        Vector3f &vel = state[i * 2 + 1];
+        if (!isNeighbor(curPos, pos)) continue;
+        vAvg += vel;
+        numOfNeighbor++;
+    }
+    if (numOfNeighbor > 0) vAvg /= (float)numOfNeighbor;
+    return vAvg - curVel;
 }
 
 std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
