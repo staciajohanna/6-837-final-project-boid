@@ -8,23 +8,41 @@ Boid::Boid()
     // initialize the boid system
     std::vector<Vector3f> initialState;
     for (int i=0;i<7;i++) {
-        initialState.push_back(Vector3f(0.1,rand_uniform(0.0, 1.0),rand_uniform(0.0, 1.0)));
+        initialState.push_back(Vector3f(0.1,rand_uniform(0.0, 3.0),rand_uniform(0.0, 4.0)));
+        initialState.push_back(Vector3f(0.0,0.0,0.0));
     }
     setState(initialState);
 }
 
+bool isNeighbor(Vector3f bird, Vector3f neighbor, float r) 
+{
+
+}
+
+Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex) 
+{
+
+}
+
+Vector3f getAlignmentForce(std::vector<Vector3f> &state, int birdIndex) 
+{
+
+}
+
 std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
 {
-    // for a given state, evaluate f(X,t)
-    std::vector<Vector3f> derivatives;
-    for (int i = 0; i < state.size(); ++i) {
-        Vector3f &vstate = state[i];
-        float x = vstate[0];
-        float y = vstate[1];
-        float z = vstate[2];
-        derivatives.push_back(Vector3f(-y,x,0));
+    std::vector<Vector3f> f;
+    for (int i = 0; i < state.size()/2; ++i) {
+        Vector3f &pos = state[i * 2];
+        Vector3f &vel = state[i * 2 + 1];
+        Vector3f separationForce = getSeparationForce(state, i);
+        Vector3f alignmentForce = getAlignmentForce(state, i);
+        Vector3f cohesionForce = vel + alignmentForce;
+        Vector3f netForce = separationForce + alignmentForce + cohesionForce;
+        f.push_back(vel);
+        f.push_back(netForce);
     }
-    return derivatives;
+    return f;
 }
 
 // render the system (ie draw the particles)
@@ -36,6 +54,6 @@ void Boid::draw(GLProgram& gl)
     for (int i = 0; i < currentState.size(); ++i) {
         Vector3f position = currentState[i];
         gl.updateModelMatrix(Matrix4f::translation(position));
-        drawTriangle(0.3f);
+        drawBird(0.15f);
     } 
 }

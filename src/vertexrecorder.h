@@ -41,4 +41,7 @@ void drawQuad(float w);
 // draw a right triangle in XY with normal in +Z direction
 void drawTriangle(float r);
 
+// draw a bird-shaped simple shape
+void drawBird(float w);
+
 #endif
