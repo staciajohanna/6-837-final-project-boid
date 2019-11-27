@@ -30,10 +30,12 @@ Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex)
         if (i == birdIndex) continue;
         Vector3f &pos = state[i * 2];
         Vector3f &vel = state[i * 2 + 1];
-        if (!isNeighbor(curPos, pos, NEIGHBOR_RADIUS));
+        if (!isNeighbor(curPos, pos, NEIGHBOR_RADIUS)) continue;
         float dist = sqrt((curPos - pos).absSquared());
-        
+        Vector3f dir = curPos - pos;
+        res += dir.normalized()/(dist*dist);
     }
+    return res;
 }
 
 Vector3f getAlignmentForce(std::vector<Vector3f> &state, int birdIndex) 
