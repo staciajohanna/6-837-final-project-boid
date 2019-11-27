@@ -16,9 +16,11 @@ Boid::Boid()
     setState(initialState);
 }
 
-bool isNeighbor(Vector3f bird, Vector3f neighbor, float r) 
+bool isNeighbor(Vector3f current, Vector3f neighbor) 
 {
-
+    if ((current - neighbor).abs() <= NEIGHBOR_RADIUS) {
+        return true;
+    } return false;
 }
 
 Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex) 
@@ -30,7 +32,7 @@ Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex)
         if (i == birdIndex) continue;
         Vector3f &pos = state[i * 2];
         Vector3f &vel = state[i * 2 + 1];
-        if (!isNeighbor(curPos, pos, NEIGHBOR_RADIUS)) continue;
+        if (!isNeighbor(curPos, pos)) continue;
         float dist = sqrt((curPos - pos).absSquared());
         Vector3f dir = curPos - pos;
         res += dir.normalized()/(dist*dist);
