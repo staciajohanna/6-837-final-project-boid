@@ -3,6 +3,8 @@
 #include "camera.h"
 #include "vertexrecorder.h"
 
+const float NEIGHBOR_RADIUS = 1.0;
+
 Boid::Boid()
 {
     // initialize the boid system
@@ -21,7 +23,17 @@ bool isNeighbor(Vector3f bird, Vector3f neighbor, float r)
 
 Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex) 
 {
-
+    Vector3f &curPos = state[birdIndex * 2];
+    Vector3f &curVel = state[birdIndex * 2 + 1];
+    Vector3f res = Vector3f(0.0);
+    for (int i=0;i<state.size()/2;i++) {
+        if (i == birdIndex) continue;
+        Vector3f &pos = state[i * 2];
+        Vector3f &vel = state[i * 2 + 1];
+        if (!isNeighbor(curPos, pos, NEIGHBOR_RADIUS));
+        float dist = sqrt((curPos - pos).absSquared());
+        
+    }
 }
 
 Vector3f getAlignmentForce(std::vector<Vector3f> &state, int birdIndex) 
