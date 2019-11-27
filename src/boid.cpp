@@ -11,7 +11,7 @@ Boid::Boid()
     // initialize the boid system
     std::vector<Vector3f> initialState;
     for (int i=0;i<7;i++) {
-        initialState.push_back(Vector3f(0.1,rand_uniform(0.0, 3.0),rand_uniform(0.0, 4.0)));
+        initialState.push_back(Vector3f(0.1,rand_uniform(0.0, 3.0),0.0));
         initialState.push_back(Vector3f(0.0,0.0,0.0));
     }
     setState(initialState);
@@ -34,7 +34,7 @@ Vector3f getSeparationForce(std::vector<Vector3f> &state, int birdIndex)
         if (i == birdIndex) continue;
         Vector3f &pos = state[i * 2];
         Vector3f &vel = state[i * 2 + 1];
-        if (!isNeighbor(curPos, pos)) continue;
+        //if (!isNeighbor(curPos, pos)) continue;
         float dist = sqrt((curPos - pos).absSquared());
         Vector3f dir = curPos - pos;
         res += dir.normalized()/(dist*dist);
@@ -54,7 +54,7 @@ Vector3f getAlignmentForce(std::vector<Vector3f> &state, int birdIndex)
         if (i == birdIndex) continue;
         Vector3f &pos = state[i * 2];
         Vector3f &vel = state[i * 2 + 1];
-        if (!isNeighbor(curPos, pos)) continue;
+        //if (!isNeighbor(curPos, pos)) continue;
         vAvg += vel;
         numOfNeighbor++;
     }
