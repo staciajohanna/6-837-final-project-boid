@@ -30,9 +30,10 @@ void drawAxis();
 
 // Some constants
 const Vector3f LIGHT_POS(3.0f, 3.0f, 5.0f);
-const Vector3f LIGHT_COLOR(120.0f, 120.0f, 120.0f);
-// const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
-const Vector3f FLOOR_COLOR(0.656f, 0.398f, 0.195f);
+// originally: const Vector3f LIGHT_COLOR(120.0f, 120.0f, 120.0f);
+const Vector3f LIGHT_COLOR(0.656f * 500, 0.398f * 500, 0.195f * 500);
+// originally: const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
+const Vector3f FLOOR_COLOR(0.203f, 0.5f, 0.976f);
 
 // time keeping
 // current "tick" (e.g. clock number of processor)
