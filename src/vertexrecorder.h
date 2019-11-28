@@ -38,6 +38,9 @@ void drawCylinder(int nsides, float r, float h);
 // draw a quad in the XZ plane with normal in +Y direction
 void drawQuad(float w);
 
+// draw a quad in the XY plane with normal in +Z direction
+void drawFloor(float w);
+
 // draw a right triangle in XY with normal in +Z direction
 void drawTriangle(float r);
 

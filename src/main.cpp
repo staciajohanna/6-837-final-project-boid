@@ -31,7 +31,8 @@ void drawAxis();
 // Some constants
 const Vector3f LIGHT_POS(3.0f, 3.0f, 5.0f);
 const Vector3f LIGHT_COLOR(120.0f, 120.0f, 120.0f);
-const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
+// const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
+const Vector3f FLOOR_COLOR(0.656f, 0.398f, 0.195f);
 
 // time keeping
 // current "tick" (e.g. clock number of processor)
@@ -219,7 +220,7 @@ void drawSystem()
     gl.updateMaterial(FLOOR_COLOR);
     gl.updateModelMatrix(Matrix4f::translation(0, -5.0f, 0));
     // draw floor
-    drawQuad(50.0f);
+    drawFloor(100.0f);
 }
 
 //-------------------------------------------------------------------

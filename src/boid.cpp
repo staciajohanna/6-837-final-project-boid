@@ -92,7 +92,7 @@ std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
 // render the system (ie draw the particles)
 void Boid::draw(GLProgram& gl)
 {
-    const Vector3f PARTICLE_COLOR(0.4f, 0.7f, 1.0f);
+    const Vector3f PARTICLE_COLOR(0.1f, 0.1f, 0.1f);
     gl.updateMaterial(PARTICLE_COLOR);
     gl.updateModelMatrix(Matrix4f::translation(Vector3f(-0.5, 1.0, 0)));
     std::vector<Vector3f> currentState = getState();
