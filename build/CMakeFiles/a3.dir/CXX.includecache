@@ -46,21 +46,41 @@ Vector3f.h
 Vector4f.h
 ../vecmath/include/Vector4f.h
 
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.cpp
+boid.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.h
+camera.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
+vertexrecorder.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h
+iostream
+-
+
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.h
+vector
+-
+particlesystem.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
+
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
+vecmath.h
+-
+cstdint
+-
+
 /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
 OpenGL/gl3.h
 -
 GL/glew.h
 -
 
-/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.cpp
-vertexrecorder.h
-/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h
-cassert
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
+vector
+-
+vecmath.h
 -
 cstdint
 -
-gl.h
-/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
 
 /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h
 vector
