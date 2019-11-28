@@ -293,10 +293,10 @@ void drawBird(float w)
 {
     VertexRecorder rec;
     const Vector3f N(0, 0, 1);
-    const Vector3f P1(0, -w, 0);
-    const Vector3f P2(0, -2*w, 0);
-    const Vector3f P3(w, w, 0);
-    const Vector3f P4(-w, w, 0);
+    const Vector3f P1(0, w, 0);
+    const Vector3f P2(0, 2*w, 0);
+    const Vector3f P3(w, -w, 0);
+    const Vector3f P4(-w, -w, 0);
 
     rec.record(P1, N);
     rec.record(P2, N);
