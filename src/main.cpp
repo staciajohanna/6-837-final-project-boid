@@ -31,9 +31,12 @@ void drawAxis();
 // Some constants
 const Vector3f LIGHT_POS(3.0f, 3.0f, 5.0f);
 // originally: const Vector3f LIGHT_COLOR(120.0f, 120.0f, 120.0f);
-const Vector3f LIGHT_COLOR(0.656f * 500, 0.398f * 500, 0.195f * 500);
+Vector3f LIGHT_COLOR(120.0f, 120.0f, 120.0f);
+Vector3f FLOOR_COLOR(0.656f, 0.398f, 0.195f);
 // originally: const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
-const Vector3f FLOOR_COLOR(0.203f, 0.5f, 0.976f);
+// std::vector<string> settings { "sunset", "midday" };
+
+const string SCENE_SETTING = "sunset";
 
 // time keeping
 // current "tick" (e.g. clock number of processor)
@@ -56,6 +59,19 @@ GLuint program_light;
 Boid* boid;
 
 // Function implementations
+
+static void toggleScene() {
+    if (SCENE_SETTING == "sunset") {
+        SCENE_SETTING == "midday";
+        LIGHT_COLOR = Vector3f(0.656f * 500, 0.398f * 500, 0.195f * 500);
+        FLOOR_COLOR = Vector3f(0.203f, 0.5f, 0.976f);
+    } else {
+        SCENE_SETTING == "sunset";
+        LIGHT_COLOR = Vector3f(120.0f, 120.0f, 120.0f);
+        FLOOR_COLOR = Vector3f(0.656f, 0.398f, 0.195f);
+    }
+}
+
 static void keyCallback(GLFWwindow* window, int key,
     int scancode, int action, int mods)
 {
@@ -83,6 +99,10 @@ static void keyCallback(GLFWwindow* window, int key,
         initSystem();
         resetTime();
         break;
+    }
+    case 'B': 
+    {
+        toggleScene();
     }
     default:
         cout << "Unhandled key press " << key << "." << endl;
