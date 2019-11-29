@@ -36,7 +36,7 @@ Vector3f FLOOR_COLOR(0.656f, 0.398f, 0.195f);
 // originally: const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
 // std::vector<string> settings { "sunset", "midday" };
 
-const string SCENE_SETTING = "sunset";
+string SCENE_SETTING = "sunset";
 
 // time keeping
 // current "tick" (e.g. clock number of processor)
@@ -62,11 +62,11 @@ Boid* boid;
 
 static void toggleScene() {
     if (SCENE_SETTING == "sunset") {
-        SCENE_SETTING == "midday";
+        SCENE_SETTING = "midday";
         LIGHT_COLOR = Vector3f(0.656f * 500, 0.398f * 500, 0.195f * 500);
         FLOOR_COLOR = Vector3f(0.203f, 0.5f, 0.976f);
     } else {
-        SCENE_SETTING == "sunset";
+        SCENE_SETTING = "sunset";
         LIGHT_COLOR = Vector3f(120.0f, 120.0f, 120.0f);
         FLOOR_COLOR = Vector3f(0.656f, 0.398f, 0.195f);
     }
@@ -190,7 +190,6 @@ void drawAxis()
     glLineWidth(3);
     recorder.draw(GL_LINES);
 }
-
 
 // initialize your particle systems
 void initSystem()
