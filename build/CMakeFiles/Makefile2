@@ -76,8 +76,8 @@ preinstall: vecmath/preinstall
 # Target rules for target CMakeFiles/a3.dir
 
 # All Build rule for target.
-CMakeFiles/a3.dir/all: 3rd_party/glfw/src/CMakeFiles/glfw.dir/all
 CMakeFiles/a3.dir/all: vecmath/CMakeFiles/vecmath.dir/all
+CMakeFiles/a3.dir/all: 3rd_party/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/depend
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target a3"
