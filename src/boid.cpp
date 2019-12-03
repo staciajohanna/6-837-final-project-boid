@@ -73,6 +73,16 @@ Vector3f getAlignmentForce(std::vector<Vector3f> &state, int birdIndex)
     return vAvg - curVel;
 }
 
+Vector3f getSeekForce(std::vector<Vector3f> &state, int birdIndex) 
+{
+
+}
+
+Vector3f getCollisionAvoidanceForce(std::vector<Vector3f> &state, int birdIndex) 
+{
+
+}
+
 std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
 {
     std::vector<Vector3f> f;
