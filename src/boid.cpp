@@ -8,6 +8,8 @@ const float NEIGHBOR_RADIUS = 5.0;
 const float WEIGHT_SEPARATION = 1.5;
 const float WEIGHT_ALIGNMENT = 1.0;
 const float WEIGHT_COHESION = 1.0;
+const float WEIGHT_SEEK = 1.0;
+const float WEIGHT_COLLISION_AVOIDANCE = 1.0;
 
 Boid::Boid()
 {
@@ -80,9 +82,13 @@ std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
         Vector3f separationForce = getSeparationForce(state, i);
         Vector3f alignmentForce = getAlignmentForce(state, i);
         Vector3f cohesionForce = vel + alignmentForce;
+        Vector3f seekForce = Vector3f(0,0,0);
+        Vector3f collisionAvoidanceForce = Vector3f(0,0,0);
         Vector3f netForce = WEIGHT_SEPARATION * separationForce + 
                             WEIGHT_ALIGNMENT * alignmentForce + 
-                            WEIGHT_COHESION * cohesionForce;
+                            WEIGHT_COHESION * cohesionForce +
+                            WEIGHT_SEEK * seekForce +
+                            WEIGHT_COLLISION_AVOIDANCE * collisionAvoidanceForce;
         f.push_back(vel);
         f.push_back(netForce);
     }
