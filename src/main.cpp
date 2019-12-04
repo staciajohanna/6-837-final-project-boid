@@ -158,6 +158,10 @@ void setViewport(GLFWwindow* window)
     camera.ApplyViewport();
 }
 
+static Vector3f getCursorPosition() {
+        return Vector3f(cursorX, cursorY, 0);
+}
+
 void drawAxis()
 {
     glUseProgram(program_color);
@@ -299,7 +303,7 @@ int main(int argc, char** argv)
     printf("Using Integrator %c with time step %.4f\n", integrator, h);
 
 
-    GLFWwindow* window = createOpenGLWindow(1024, 1024, "Assignment 3");
+    GLFWwindow* window = createOpenGLWindow(1024, 1024, "Boids");
 
     // setup the event handlers
     glfwSetKeyCallback(window, keyCallback);
@@ -354,12 +358,11 @@ int main(int argc, char** argv)
 
         // Check if any input happened during the last frame
         glfwPollEvents();
-
         double xd, yd;
         glfwGetCursorPos(window, &xd, &yd);
         cursorX = (int)xd;
         cursorY = (int)yd;
-
+        boid->setCursorPosition(cursorX, cursorY);
     }
 
     // All OpenGL resource that are created with

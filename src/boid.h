@@ -19,6 +19,8 @@ public:
     // this is called from main.cpp when it's time to draw a new frame.
     void draw(GLProgram&);
 
+    void setCursorPosition(int cursorX, int cursorY);
+
     // inherits 
     // std::vector<Vector3f> m_vVecState;
 };
