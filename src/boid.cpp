@@ -106,8 +106,11 @@ Vector3f getSeekForce(std::vector<Vector3f> &state, int birdIndex)
         // glfwGetCursorPos(window, &xd, &yd);
         // cursorX = (int)xd;
         // cursorY = (int)yd;
-        float targetX = (cursorPosition[0] - 512.0f) * (4.0f/1024.0f);
-        float targetY = -1 * (cursorPosition[1] - 402.0f) * (4.0f/804.0f);
+
+        // translation, scaling, and adjustment
+        float targetX = (cursorPosition[0] - 512.0f) * (4.0f/1024.0f) - 0.66; 
+        // translation, scaling, reflection, and adjustment
+        float targetY = -1 * (cursorPosition[1] - 402.0f) * (4.0f/804.0f) - 0.66;
         // float targetX = -10.0 - (1024 / (cursorPosition[0] + 1) * 2);
         // float targetY = 10 - (804 / (cursorPosition[1] + 1) * 2);
         // Vector3f target = Vector3f(targetX, targetY, 0);
