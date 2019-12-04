@@ -200,6 +200,7 @@ void Boid::draw(GLProgram& gl)
         Vector3f velocity = currentState[i * 2 + 1];
         Vector3f a = Vector3f(1, 1, 0);
         float rad = acos((Vector3f::dot(a, velocity))/(a.abs() * velocity.abs()));
+        if (velocity.x() < 0) rad = -rad;
         gl.updateModelMatrix(Matrix4f::translation(position)*Matrix4f::rotation(Vector3f(0,0, -1), rad));
         drawBird(0.15f);
     } 
