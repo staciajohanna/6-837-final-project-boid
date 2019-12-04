@@ -65,10 +65,12 @@ particlesystem.h
 /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
 
 /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
-vecmath.h
+=======
+/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/boid.h
+vector
 -
-cstdint
--
+particlesystem.h
+/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/particlesystem.h
 
 /Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
 OpenGL/gl3.h

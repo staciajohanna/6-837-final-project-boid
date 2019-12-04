@@ -260,7 +260,7 @@ void drawSystem()
     gl.updateModelMatrix(Matrix4f::translation(Vector3f(1.5, -1.5, 0)));
     drawSphere(0.8f, 50, 50);
     // obst 5
-    gl.updateModelMatrix(Matrix4f::translation(Vector3f(2.0, 3.0, 0)));
+    gl.updateModelMatrix(Matrix4f::translation(Vector3f(5.0, 3.0, 0)));
     drawSphere(0.8f, 50, 50);
 }
 

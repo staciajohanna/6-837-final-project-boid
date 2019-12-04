@@ -9,16 +9,16 @@ using namespace std;
 const float NEIGHBOR_RADIUS = 5.0;
 const float WEIGHT_SEPARATION = 1.8;
 const float WEIGHT_ALIGNMENT = 0.5;
-const float WEIGHT_COHESION = 0.2;
+const float WEIGHT_COHESION = 0.3;
 const float WEIGHT_SEEK = 1.0;
-const float WEIGHT_COLLISION_AVOIDANCE = 2.0;
+const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
 const float SEE_FRONT = 2.0;
 const std::vector<std::pair<float, Vector3f> > OBSTACLE_POSITION = 
             { make_pair(0.8f, Vector3f(-3.0, 2.5, 0)),
               make_pair(1.0f, Vector3f(-3.0, -1.5, 0)),
               make_pair(0.7f, Vector3f(3.0, 1.5, 0)),
               make_pair(1.0f, Vector3f(1.5, -1.5, 0)),
-              make_pair(1.2f, Vector3f(2.0, 3.0, 0)) };
+              make_pair(1.2f, Vector3f(5.0, 3.0, 0)) };
 float maxVelocity = 1.0f;
 const float MIN_FLOAT = -999999.0;
 
@@ -26,11 +26,11 @@ Boid::Boid()
 {
     // initialize the boid system
     std::vector<Vector3f> initialState;
-    for (int i=0;i<7;i++) {
+    for (int i=0;i<20;i++) {
         initialState.push_back(Vector3f(rand_uniform(0.0, 2.0),rand_uniform(-5.0, -4.0),0.0));
         initialState.push_back(Vector3f(0.0,1.0,0.0));
     }
-    for (int i=0;i<7;i++) {
+    for (int i=0;i<20;i++) {
         initialState.push_back(Vector3f(rand_uniform(-5.0, -4.0),rand_uniform(0.0, 2.0),0.0));
         initialState.push_back(Vector3f(1.0,0.0,0.0));
     }
