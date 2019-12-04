@@ -6,46 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../3rd_party/glfw/include/GLFW/glfw3.h
-stddef.h
--
-stdint.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-OpenGL/gl.h
--
-OpenGL/glu.h
--
-GL/glcorearb.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2.h
--
-GLES2/gl2ext.h
--
-GLES3/gl3.h
--
-GLES2/gl2ext.h
--
-GLES3/gl31.h
--
-GLES2/gl2ext.h
--
-vulkan/vulkan.h
--
-GL/gl.h
--
-GL/glext.h
--
-GL/glu.h
--
-
 ../vecmath/include/Matrix2f.h
 cstdio
 -
@@ -86,51 +46,37 @@ Vector3f.h
 Vector4f.h
 ../vecmath/include/Vector4f.h
 
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/boid.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.cpp
+boid.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.h
+camera.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
+vertexrecorder.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h
+iostream
+-
+float.h
+-
+
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/boid.h
 vector
 -
 particlesystem.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/particlesystem.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
 
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/camera.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/camera.h
 vecmath.h
 -
 cstdint
 -
 
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/gl.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
 OpenGL/gl3.h
 -
 GL/glew.h
 -
 
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/main.cpp
-gl.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/gl.h
-GLFW/glfw3.h
--
-cmath
--
-cstdlib
--
-ctime
--
-iostream
--
-vector
--
-vertexrecorder.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/vertexrecorder.h
-starter3_util.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/starter3_util.h
-camera.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/camera.h
-timestepper.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/timestepper.h
-boid.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/boid.h
-
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/particlesystem.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/particlesystem.h
 vector
 -
 vecmath.h
@@ -138,25 +84,11 @@ vecmath.h
 cstdint
 -
 
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/starter3_util.h
-cstdint
--
-gl.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/gl.h
-
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/timestepper.h
-vecmath.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/vecmath.h
-vector
--
-particlesystem.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/particlesystem.h
-
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/vertexrecorder.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/vertexrecorder.h
 vector
 -
 vecmath.h
 -
 gl.h
-/Users/charvigopal/6.170/ps2NodeIntro/6-837-final-project-boid/src/gl.h
+/Users/stacia/documents/University/MIT/Class/03-Junior/Fall/6-837 Computer Graphics/Final Project/code/6-837-final-project-boid/src/gl.h
 
