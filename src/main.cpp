@@ -241,6 +241,25 @@ void drawSystem()
     gl.updateModelMatrix(Matrix4f::translation(0, -5.0f, 0));
     // draw floor
     drawFloor(100.0f);
+
+    // draw obstacles
+    const Vector3f OBSTACLE_COLOR(0.69f, 0.46f, 0.46f);
+    gl.updateMaterial(OBSTACLE_COLOR);
+    // obst 1
+    gl.updateModelMatrix(Matrix4f::translation(Vector3f(-3.0, 2.5, 0)));
+    drawSphere(0.5f, 50, 50);
+    // obst 2
+    gl.updateModelMatrix(Matrix4f::translation(Vector3f(-3.0, -1.5, 0)));
+    drawSphere(0.7f, 50, 50);
+    // obst 3
+    gl.updateModelMatrix(Matrix4f::translation(Vector3f(3.0, 1.5, 0)));
+    drawSphere(0.4f, 50, 50);
+    // obst 4
+    gl.updateModelMatrix(Matrix4f::translation(Vector3f(1.5, -1.5, 0)));
+    drawSphere(0.8f, 50, 50);
+    // obst 5
+    gl.updateModelMatrix(Matrix4f::translation(Vector3f(2.0, 3.0, 0)));
+    drawSphere(0.8f, 50, 50);
 }
 
 //-------------------------------------------------------------------
