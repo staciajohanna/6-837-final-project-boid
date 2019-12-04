@@ -50,6 +50,8 @@ double simulated_s;
 TimeStepper* timeStepper;
 float h;
 char integrator;
+int cursorX;
+int cursorY;
 
 Camera camera;
 bool gMousePressed = false;
@@ -278,6 +280,7 @@ void initRendering()
 // Set up OpenGL, define the callbacks and start the main loop
 int main(int argc, char** argv)
 {
+
     if (argc != 3) {
         printf("Usage: %s <e|t|r> <timestep>\n", argv[0]);
         printf("       e: Integrator: Forward Euler\n");
@@ -351,6 +354,12 @@ int main(int argc, char** argv)
 
         // Check if any input happened during the last frame
         glfwPollEvents();
+
+        double xd, yd;
+        glfwGetCursorPos(window, &xd, &yd);
+        cursorX = (int)xd;
+        cursorY = (int)yd;
+
     }
 
     // All OpenGL resource that are created with
