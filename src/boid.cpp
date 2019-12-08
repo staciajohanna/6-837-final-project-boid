@@ -20,10 +20,10 @@ const float WEIGHT_COHESION = 0.5;
 const float WEIGHT_SEEK = 1.7;
 const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
 const float SEE_FRONT = 2.0;
-const float X_MIN = -5.0;
-const float X_MAX = 5.0;
-const float Y_MIN = -5.0;
-const float Y_MAX = 5.0;
+const float X_MIN = 2.0;
+const float X_MAX = 2.0;
+const float Y_MIN = -2.0;
+const float Y_MAX = 2.0;
 bool drawObstacle = true;
 bool seekCursorMode = false;
 Vector3f cursorPosition;
@@ -187,13 +187,35 @@ std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
                             WEIGHT_COLLISION_AVOIDANCE * collisionAvoidanceForce;
         float posX = pos[0];
         float posY = pos[1];
-        
-        if (posX < X_MIN || posX > X_MAX || posY < Y_MIN || posY > Y_MAX) { //boid outside bounding box
-            // remove boid
-        } else {
-            f.push_back(vel);
-            f.push_back(netForce);
+        float velX = vel[0];
+        float velY = vel[1];
+        float velZ = vel[2];
+        float forceX = netForce[0];
+        float forceY = netForce[1];
+        float forceZ = netForce[2];
+        // bounding box checks
+        if (posX < X_MIN) {
+            // forceX = 0;
+            forceX = abs(forceX);  
+            // velX = 0;
+            velX = abs(velX);  
+        } if (posX > X_MAX) {
+            // forceX = 0;
+            forceX = -abs(forceX);
+            // velX = 0;  
+            velX = -abs(velX);  
+        } if (posY < Y_MIN) {
+            // forceY = 0;
+            forceY = abs(forceY); 
+            // velY = 0;
+            velY = abs(velY); 
+        } if (posY > Y_MAX) {
+            // forceY = 0;
+            forceY = -abs(forceY); 
+            velY = -abs(velY); 
         }
+        f.push_back(Vector3f(velX, velY, velZ));
+        f.push_back(Vector3f(forceX, forceY, forceZ));
     }
     return f;
 }
