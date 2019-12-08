@@ -23,6 +23,8 @@ public:
 
     void setDrawObstacle(bool isDraw);
 
+    void setPredatorPreyMode(bool isPreyMode);
+
     // inherits 
     // std::vector<Vector3f> m_vVecState;
 };

@@ -21,6 +21,7 @@ const float WEIGHT_SEEK = 1.7;
 const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
 const float SEE_FRONT = 2.0;
 bool drawObstacle = true;
+bool predatorPreyMode = false;
 Vector3f cursorPosition;
 
 const std::vector<std::pair<float, Vector3f> > OBSTACLE_POSITION = 
@@ -207,4 +208,8 @@ void Boid::setCursorPosition(int cursorX, int cursorY) {
 
 void Boid::setDrawObstacle(bool isDraw) {
     drawObstacle = isDraw;
+}
+
+void Boid::setPredatorPreyMode(bool isPreyMode) {
+    predatorPreyMode = isPreyMode;
 }
