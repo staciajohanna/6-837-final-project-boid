@@ -19,12 +19,11 @@ const float WEIGHT_ALIGNMENT = 1.0;
 const float WEIGHT_COHESION = 0.5;
 const float WEIGHT_SEEK = 1.7;
 const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
-const float DRAG = 0.0;
 const float SEE_FRONT = 2.0;
-const float X_MIN = -5.0;
-const float X_MAX = 5.0;
-const float Y_MIN = -5.0;
-const float Y_MAX = 5.0;
+const float X_MIN = -3.0;
+const float X_MAX = 3.0;
+const float Y_MIN = -3.0;
+const float Y_MAX = 3.0;
 bool drawObstacle = true;
 bool predatorPreyMode = false;
 bool seekCursorMode = false;
@@ -186,31 +185,17 @@ std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
                             WEIGHT_ALIGNMENT * alignmentForce + 
                             WEIGHT_COHESION * cohesionForce +
                             WEIGHT_SEEK * seekForce +
-                            WEIGHT_COLLISION_AVOIDANCE * collisionAvoidanceForce +
-                            -DRAG * vel;
+                            WEIGHT_COLLISION_AVOIDANCE * collisionAvoidanceForce;
         float posX = pos[0];
         float posY = pos[1];
         cout << posX << "posX" << "/n";
         cout << posY << "posY" << "/n";
         f.push_back(vel);
-        float forceX = netForce[0];
-        float forceY = netForce[1];
-        float forceZ = netForce[2];
-        // bounding box checks
-        if (posX < X_MIN) {
-            forceX = 0;
-          // forceX = 0.5 * abs(forceX);  
-        } if (posX > X_MAX) {
-            forceX = 0;
-            // forceX = -0.5 * abs(forceX);  
-        } if (posY < Y_MIN) {
-            forceY = 0;
-            // forceY = 0.5 * abs(forceY); 
-        } if (posY > Y_MAX) {
-            forceY = 0;
-            // forceY = -0.5 * abs(forceY); 
+        if (posX < X_MIN || posX > X_MAX || posY < Y_MIN || posY > Y_MAX) { //boid outside bounding box
+            f.push_back(-netForce);
+        } else {
+            f.push_back(netForce);
         }
-        f.push_back(Vector3f(forceX, forceY, forceZ));
     }
     return f;
 }
