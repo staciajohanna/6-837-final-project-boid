@@ -22,6 +22,7 @@ const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
 const float SEE_FRONT = 2.0;
 bool drawObstacle = true;
 bool predatorPreyMode = false;
+bool seekCursorMode = false;
 Vector3f cursorPosition;
 
 const std::vector<std::pair<float, Vector3f> > OBSTACLE_POSITION = 
@@ -171,7 +172,10 @@ std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
         Vector3f separationForce = getSeparationForce(state, i);
         Vector3f alignmentForce = getAlignmentForce(state, i);
         Vector3f cohesionForce = vel + alignmentForce;
-        Vector3f seekForce = getSeekForce(state, i);
+        Vector3f seekForce = Vector3f(0);
+        if (seekCursorMode) {
+            seekForce = getSeekForce(state, i);
+        }
         Vector3f collisionAvoidanceForce = getCollisionAvoidanceForce(state, i);
         Vector3f netForce = WEIGHT_SEPARATION * separationForce + 
                             WEIGHT_ALIGNMENT * alignmentForce + 
@@ -212,4 +216,8 @@ void Boid::setDrawObstacle(bool isDraw) {
 
 void Boid::setPredatorPreyMode(bool isPreyMode) {
     predatorPreyMode = isPreyMode;
+}
+
+void Boid::setCursorMode(bool seekCursor) {
+    seekCursorMode = seekCursor;
 }

@@ -25,6 +25,8 @@ public:
 
     void setPredatorPreyMode(bool isPreyMode);
 
+    void setCursorMode(bool seekCursor);
+
     // inherits 
     // std::vector<Vector3f> m_vVecState;
 };
