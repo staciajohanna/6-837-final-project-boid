@@ -21,6 +21,8 @@ public:
 
     void setCursorPosition(int cursorX, int cursorY);
 
+    void setDrawObstacle(bool isDraw);
+
     // inherits 
     // std::vector<Vector3f> m_vVecState;
 };

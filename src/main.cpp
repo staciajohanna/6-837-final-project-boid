@@ -38,6 +38,8 @@ Vector3f FLOOR_COLOR(0.656f, 0.398f, 0.195f);
 
 string SCENE_SETTING = "sunset";
 
+bool drawObstacle = true;
+
 // time keeping
 // current "tick" (e.g. clock number of processor)
 uint64_t start_tick;
@@ -105,6 +107,11 @@ static void keyCallback(GLFWwindow* window, int key,
     case 'B': 
     {
         toggleScene();
+    }
+    case 'O':
+    {
+        drawObstacle = !drawObstacle;
+        boid->setDrawObstacle(drawObstacle);
     }
     default:
         cout << "Unhandled key press " << key << "." << endl;
@@ -249,23 +256,25 @@ void drawSystem()
     drawFloor(100.0f);
 
     // draw obstacles
-    const Vector3f OBSTACLE_COLOR(0.69f, 0.46f, 0.46f);
-    gl.updateMaterial(OBSTACLE_COLOR);
-    // obst 1
-    gl.updateModelMatrix(Matrix4f::translation(Vector3f(-3.0, 2.5, 0)));
-    drawSphere(0.5f, 50, 50);
-    // obst 2
-    gl.updateModelMatrix(Matrix4f::translation(Vector3f(-3.0, -1.5, 0)));
-    drawSphere(0.7f, 50, 50);
-    // obst 3
-    gl.updateModelMatrix(Matrix4f::translation(Vector3f(3.0, 1.5, 0)));
-    drawSphere(0.4f, 50, 50);
-    // obst 4
-    gl.updateModelMatrix(Matrix4f::translation(Vector3f(1.5, -1.5, 0)));
-    drawSphere(0.8f, 50, 50);
-    // obst 5
-    gl.updateModelMatrix(Matrix4f::translation(Vector3f(5.0, 3.0, 0)));
-    drawSphere(0.8f, 50, 50);
+    if (drawObstacle) {
+        const Vector3f OBSTACLE_COLOR(0.69f, 0.46f, 0.46f);
+        gl.updateMaterial(OBSTACLE_COLOR);
+        // obst 1
+        gl.updateModelMatrix(Matrix4f::translation(Vector3f(-3.0, 2.5, 0)));
+        drawSphere(0.5f, 50, 50);
+        // obst 2
+        gl.updateModelMatrix(Matrix4f::translation(Vector3f(-3.0, -1.5, 0)));
+        drawSphere(0.7f, 50, 50);
+        // obst 3
+        gl.updateModelMatrix(Matrix4f::translation(Vector3f(3.0, 1.5, 0)));
+        drawSphere(0.4f, 50, 50);
+        // obst 4
+        gl.updateModelMatrix(Matrix4f::translation(Vector3f(1.5, -1.5, 0)));
+        drawSphere(0.8f, 50, 50);
+        // obst 5
+        gl.updateModelMatrix(Matrix4f::translation(Vector3f(5.0, 3.0, 0)));
+        drawSphere(0.8f, 50, 50);
+    }
 }
 
 //-------------------------------------------------------------------

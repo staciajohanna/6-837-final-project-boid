@@ -20,6 +20,7 @@ const float WEIGHT_COHESION = 0.5;
 const float WEIGHT_SEEK = 1.7;
 const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
 const float SEE_FRONT = 2.0;
+bool drawObstacle = true;
 Vector3f cursorPosition;
 
 const std::vector<std::pair<float, Vector3f> > OBSTACLE_POSITION = 
@@ -122,6 +123,9 @@ bool isLineSphereIntersection(Vector3f headerVector, Vector3f headerVector2, pai
 pair<float, Vector3f> getClosestObstacle(Vector3f headerVector, Vector3f headerVector2, Vector3f curPos) 
 {
     pair<float, Vector3f> res = make_pair(MIN_FLOAT, Vector3f(MIN_FLOAT, MIN_FLOAT, 0));
+    // not draw obstacle
+    if (!drawObstacle) return res;
+
     float eps = 0.00000001f;
     for (int i=0;i<OBSTACLE_POSITION.size();i++) 
     {
@@ -199,4 +203,8 @@ void Boid::draw(GLProgram& gl)
 
 void Boid::setCursorPosition(int cursorX, int cursorY) {
     cursorPosition = Vector3f(cursorX, cursorY, 0);
+}
+
+void Boid::setDrawObstacle(bool isDraw) {
+    drawObstacle = isDraw;
 }
