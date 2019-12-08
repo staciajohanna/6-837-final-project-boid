@@ -20,10 +20,10 @@ const float WEIGHT_COHESION = 0.5;
 const float WEIGHT_SEEK = 1.7;
 const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
 const float SEE_FRONT = 2.0;
-const float X_MIN = -3.0;
-const float X_MAX = 3.0;
-const float Y_MIN = -3.0;
-const float Y_MAX = 3.0;
+const float X_MIN = -5.0;
+const float X_MAX = 5.0;
+const float Y_MIN = -5.0;
+const float Y_MAX = 5.0;
 bool drawObstacle = true;
 bool predatorPreyMode = false;
 bool seekCursorMode = false;
@@ -188,12 +188,11 @@ std::vector<Vector3f> Boid::evalF(std::vector<Vector3f> state)
                             WEIGHT_COLLISION_AVOIDANCE * collisionAvoidanceForce;
         float posX = pos[0];
         float posY = pos[1];
-        cout << posX << "posX" << "/n";
-        cout << posY << "posY" << "/n";
-        f.push_back(vel);
+        
         if (posX < X_MIN || posX > X_MAX || posY < Y_MIN || posY > Y_MAX) { //boid outside bounding box
-            f.push_back(-netForce);
+            // remove boid
         } else {
+            f.push_back(vel);
             f.push_back(netForce);
         }
     }
