@@ -39,6 +39,8 @@ Vector3f FLOOR_COLOR(0.656f, 0.398f, 0.195f);
 string SCENE_SETTING = "sunset";
 
 bool drawObstacle = true;
+bool predatorPreyMode = false;
+bool seekCursorMode = false;
 
 // time keeping
 // current "tick" (e.g. clock number of processor)
@@ -76,6 +78,21 @@ static void toggleScene() {
     }
 }
 
+void resetPredatorPreyMode() {
+    predatorPreyMode = false;
+    boid->setPredatorPreyMode(false);
+}
+
+void resetObstacleMode() {
+    drawObstacle = false;
+    boid->setDrawObstacle(false);
+}
+
+void resetSeekCursorMode() {
+    seekCursorMode = false;
+    boid->setCursorMode(false);
+}
+
 static void keyCallback(GLFWwindow* window, int key,
     int scancode, int action, int mods)
 {
@@ -107,11 +124,40 @@ static void keyCallback(GLFWwindow* window, int key,
     case 'B': 
     {
         toggleScene();
+        break;
+    }
+    case 'C':
+    {
+        seekCursorMode = !seekCursorMode;
+        boid->setCursorMode(seekCursorMode);
+        if (seekCursorMode) {
+            // reset other modes
+            resetPredatorPreyMode();
+            resetObstacleMode();
+        }
+        break;
     }
     case 'O':
     {
         drawObstacle = !drawObstacle;
         boid->setDrawObstacle(drawObstacle);
+        if (drawObstacle) {
+            // reset other modes
+            resetSeekCursorMode();
+            resetPredatorPreyMode();
+        }
+        break;
+    }
+    case 'P':
+    {
+        predatorPreyMode = !predatorPreyMode;
+        boid->setPredatorPreyMode(predatorPreyMode);
+        if (predatorPreyMode) {
+            // reset other modes
+            resetObstacleMode();
+            resetSeekCursorMode();
+        }
+        break;
     }
     default:
         cout << "Unhandled key press " << key << "." << endl;
