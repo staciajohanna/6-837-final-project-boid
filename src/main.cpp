@@ -39,7 +39,6 @@ Vector3f FLOOR_COLOR(0.656f, 0.398f, 0.195f);
 string SCENE_SETTING = "sunset";
 
 bool drawObstacle = true;
-bool predatorPreyMode = false;
 bool seekCursorMode = false;
 
 // time keeping
@@ -76,11 +75,6 @@ static void toggleScene() {
         LIGHT_COLOR = Vector3f(120.0f, 120.0f, 120.0f);
         FLOOR_COLOR = Vector3f(0.656f, 0.398f, 0.195f);
     }
-}
-
-void resetPredatorPreyMode() {
-    predatorPreyMode = false;
-    boid->setPredatorPreyMode(false);
 }
 
 void resetObstacleMode() {
@@ -132,7 +126,6 @@ static void keyCallback(GLFWwindow* window, int key,
         boid->setCursorMode(seekCursorMode);
         if (seekCursorMode) {
             // reset other modes
-            resetPredatorPreyMode();
             resetObstacleMode();
         }
         break;
@@ -143,18 +136,6 @@ static void keyCallback(GLFWwindow* window, int key,
         boid->setDrawObstacle(drawObstacle);
         if (drawObstacle) {
             // reset other modes
-            resetSeekCursorMode();
-            resetPredatorPreyMode();
-        }
-        break;
-    }
-    case 'P':
-    {
-        predatorPreyMode = !predatorPreyMode;
-        boid->setPredatorPreyMode(predatorPreyMode);
-        if (predatorPreyMode) {
-            // reset other modes
-            resetObstacleMode();
             resetSeekCursorMode();
         }
         break;

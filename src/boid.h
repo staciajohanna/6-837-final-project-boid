@@ -23,8 +23,6 @@ public:
 
     void setDrawObstacle(bool isDraw);
 
-    void setPredatorPreyMode(bool isPreyMode);
-
     void setCursorMode(bool seekCursor);
 
     // inherits 

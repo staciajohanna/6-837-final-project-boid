@@ -25,7 +25,6 @@ const float X_MAX = 5.0;
 const float Y_MIN = -5.0;
 const float Y_MAX = 5.0;
 bool drawObstacle = true;
-bool predatorPreyMode = false;
 bool seekCursorMode = false;
 Vector3f cursorPosition;
 
@@ -206,7 +205,8 @@ void Boid::draw(GLProgram& gl)
     gl.updateMaterial(PARTICLE_COLOR);
     gl.updateModelMatrix(Matrix4f::translation(Vector3f(-0.5, 1.0, 0)));
     std::vector<Vector3f> currentState = getState();
-    for (int i = 0; i < currentState.size()/2; ++i) {
+    int stateLength = currentState.size()/2;
+    for (int i = 0; i < stateLength; ++i) {
         Vector3f position = currentState[i * 2];
         Vector3f velocity = currentState[i * 2 + 1];
         Vector3f a = Vector3f(1, 1, 0);
@@ -214,7 +214,7 @@ void Boid::draw(GLProgram& gl)
         if (velocity.x() < 0) rad = -rad;
         gl.updateModelMatrix(Matrix4f::translation(position)*Matrix4f::rotation(Vector3f(0,0, -1), rad));
         drawBird(0.15f);
-    } 
+    }
 }
 
 void Boid::setCursorPosition(int cursorX, int cursorY) {
@@ -223,10 +223,6 @@ void Boid::setCursorPosition(int cursorX, int cursorY) {
 
 void Boid::setDrawObstacle(bool isDraw) {
     drawObstacle = isDraw;
-}
-
-void Boid::setPredatorPreyMode(bool isPreyMode) {
-    predatorPreyMode = isPreyMode;
 }
 
 void Boid::setCursorMode(bool seekCursor) {
