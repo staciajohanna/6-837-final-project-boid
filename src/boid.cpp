@@ -14,11 +14,11 @@
 using namespace std;
 
 const float NEIGHBOR_RADIUS = 5.0;
-const float WEIGHT_SEPARATION = 4.0;
-const float WEIGHT_ALIGNMENT = 1.0;
-const float WEIGHT_COHESION = 0.5;
+const float WEIGHT_SEPARATION = 1.8;
+const float WEIGHT_ALIGNMENT = 0.5;
+const float WEIGHT_COHESION = 0.2;
 const float WEIGHT_SEEK = 1.7;
-const float WEIGHT_COLLISION_AVOIDANCE = 3.0;
+const float WEIGHT_COLLISION_AVOIDANCE = 2.0;
 const float SEE_FRONT = 2.0;
 bool drawObstacle = true;
 bool seekCursorMode = false;
@@ -39,11 +39,11 @@ Boid::Boid()
     std::vector<Vector3f> initialState;
     for (int i=0;i<20;i++) {
         initialState.push_back(Vector3f(rand_uniform(0.0, 2.0),rand_uniform(-5.0, -4.0),0.0));
-        initialState.push_back(Vector3f(0.0,1.0,0.0));
+        initialState.push_back(Vector3f(0.0,0.5,0.0));
     }
     for (int i=0;i<20;i++) {
         initialState.push_back(Vector3f(rand_uniform(-5.0, -4.0),rand_uniform(0.0, 2.0),0.0));
-        initialState.push_back(Vector3f(1.0,0.0,0.0));
+        initialState.push_back(Vector3f(0.5,0.0,0.0));
     }
     setState(initialState);
 }
@@ -114,11 +114,12 @@ Vector3f getSeekForce(std::vector<Vector3f> &state, int birdIndex)
         return steeringForce;
 }
 
-bool isLineSphereIntersection(Vector3f headerVector, Vector3f headerVector2, pair<float, Vector3f> obstaclePos)
+bool isLineSphereIntersection(Vector3f curPos, Vector3f headerVector, Vector3f headerVector2, pair<float, Vector3f> obstaclePos)
 {
     float eps = 0.00000001f;
     return (getDistance(headerVector, obstaclePos.second) + eps) < obstaclePos.first ||
-           (getDistance(headerVector2, obstaclePos.second) + eps) < obstaclePos.first;
+           (getDistance(headerVector2, obstaclePos.second) + eps) < obstaclePos.first ||
+           (getDistance(curPos, obstaclePos.second) + eps) < obstaclePos.first;
 }
 
 pair<float, Vector3f> getClosestObstacle(Vector3f headerVector, Vector3f headerVector2, Vector3f curPos) 
@@ -132,7 +133,7 @@ pair<float, Vector3f> getClosestObstacle(Vector3f headerVector, Vector3f headerV
     {
         float radius = OBSTACLE_POSITION[i].first;
         Vector3f obstaclePos = OBSTACLE_POSITION[i].second;
-        bool isIntersect = isLineSphereIntersection(headerVector, headerVector2, OBSTACLE_POSITION[i]);
+        bool isIntersect = isLineSphereIntersection(curPos, headerVector, headerVector2, OBSTACLE_POSITION[i]);
         // when res doesn't have obstacle yet, or if there's obstacle within line of sight.
         float distBoidToObstacle = getDistance(curPos, obstaclePos);
         float distBoidToCurClosestObstacle = getDistance(curPos, res.second);
@@ -198,7 +199,7 @@ void Boid::draw(GLProgram& gl)
     for (int i = 0; i < stateLength; ++i) {
         Vector3f position = currentState[i * 2];
         Vector3f velocity = currentState[i * 2 + 1];
-        Vector3f a = Vector3f(1, 1, 0);
+        Vector3f a = Vector3f(0, 1, 0);
         float rad = acos((Vector3f::dot(a, velocity))/(a.abs() * velocity.abs()));
         if (velocity.x() < 0) rad = -rad;
         gl.updateModelMatrix(Matrix4f::translation(position)*Matrix4f::rotation(Vector3f(0,0, -1), rad));
