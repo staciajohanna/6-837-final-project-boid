@@ -14,12 +14,12 @@
 using namespace std;
 
 const float NEIGHBOR_RADIUS = 5.0;
-const float WEIGHT_SEPARATION = 1.8;
+const float WEIGHT_SEPARATION = 2.0;
 const float WEIGHT_ALIGNMENT = 0.5;
 const float WEIGHT_COHESION = 0.2;
 const float WEIGHT_SEEK = 1.7;
-const float WEIGHT_COLLISION_AVOIDANCE = 2.0;
-const float SEE_FRONT = 2.0;
+const float WEIGHT_COLLISION_AVOIDANCE = 2.3;
+const float SEE_FRONT = 2.8;
 bool drawObstacle = true;
 bool seekCursorMode = false;
 Vector3f cursorPosition;
